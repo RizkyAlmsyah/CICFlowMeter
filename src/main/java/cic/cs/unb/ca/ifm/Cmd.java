@@ -188,7 +188,8 @@ public class Cmd {
         @Override
         public void onFlowGenerated(BasicFlow flow) {
 
-            String flowDump = flow.dumpFlowBasedFeaturesEx();
+//            String flowDump = flow.dumpFlowBasedFeaturesEx();
+            String flowDump = "";
             List<String> flowStringList = new ArrayList<>();
             flowStringList.add(flowDump);
             InsertCsvRow.insert(FlowFeature.getHeader(),flowStringList,outPath,fileName+ FlowMgr.FLOW_SUFFIX);
