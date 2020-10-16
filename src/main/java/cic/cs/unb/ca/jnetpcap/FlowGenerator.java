@@ -173,7 +173,8 @@ public class FlowGenerator {
 			for(Integer key:fkeys){
 	    		flow = finishedFlows.get(key);
                          if (flow.packetCount() > 1) {
-                           output.write((flow.dumpFlowBasedFeaturesEx() + "\n").getBytes());
+//                           output.write((flow.dumpFlowBasedFeaturesEx() + "\n").getBytes());
+                           output.write(("\n").getBytes());
                            total++;
                            } 
                          else {
@@ -187,7 +188,8 @@ public class FlowGenerator {
 			for(String key:ckeys){
 	    		flow = currentFlows.get(key);
 	    		if(flow.packetCount()>1) {
-                    output.write((flow.dumpFlowBasedFeaturesEx() + "\n").getBytes());
+//                    output.write((flow.dumpFlowBasedFeaturesEx() + "\n").getBytes());
+                    output.write(("\n").getBytes());
                     total++;
                 }else{
                     zeroPkt++;
@@ -226,7 +228,8 @@ public class FlowGenerator {
 
             for (BasicFlow flow : currentFlows.values()) {
                 if(flow.packetCount()>1) {
-                    output.write((flow.dumpFlowBasedFeaturesEx() + LINE_SEP).getBytes());
+//                    output.write((flow.dumpFlowBasedFeaturesEx() + LINE_SEP).getBytes());
+                    output.write(("" + LINE_SEP).getBytes());
                     total++;
                 }else{
 
