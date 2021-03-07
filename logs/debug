@@ -1,0 +1,828 @@
+2021-03-07 13:44:06 DEBUG cic.cs.unb.ca.ifm.App    0
+2021-03-07 13:48:13 DEBUG cic.cs.unb.ca.ifm.App    0
+2021-03-07 13:57:58 DEBUG cic.cs.unb.ca.ifm.App    0
+2021-03-07 14:22:58 DEBUG cic.cs.unb.ca.ifm.App    0
+2021-03-07 14:27:37 DEBUG cic.cs.unb.ca.ifm.App    0
+2021-03-07 14:43:24 INFO  cic.cs.unb.ca.ifm.AutomaticFlowmeter    Starting Proccess....
+2021-03-07 14:43:24 INFO  cic.cs.unb.ca.flow.FlowMonitor    Listen at Interface netflowmqtt
+2021-03-07 14:43:24 INFO  cic.cs.unb.ca.jnetpcap.worker.TrafficFlowWorker    open netflowmqtt fail -> netflowmqtt: No such device exists (SIOCGIFHWADDR: No such device)
+2021-03-07 14:44:57 INFO  cic.cs.unb.ca.ifm.AutomaticFlowmeter    Starting Proccess....
+2021-03-07 14:44:57 INFO  cic.cs.unb.ca.flow.FlowMonitor    Listen at Interface enp0s3
+2021-03-07 14:44:57 INFO  cic.cs.unb.ca.jnetpcap.worker.TrafficFlowWorker    Pcap is listening...
+2021-03-07 14:44:57 DEBUG cic.cs.unb.ca.flow.FlowMonitor    Listening in cic.cs.unb.ca.jnetpcap.worker.TrafficFlowWorker@b5382ee
+2021-03-07 14:45:58 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 5 flow
+2021-03-07 14:45:58 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 5 flow
+2021-03-07 14:45:59 INFO  org.apache.kafka.clients.producer.ProducerConfig    ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class cic.cs.unb.ca.kafka.KafkaJsonSerializer
+
+2021-03-07 14:45:59 DEBUG org.apache.kafka.clients.producer.internals.Sender    [Producer clientId=producer-1] Starting Kafka producer I/O thread.
+2021-03-07 14:45:59 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka version: 2.7.0
+2021-03-07 14:45:59 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka commitId: 448719dc99a19793
+2021-03-07 14:45:59 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka startTimeMs: 1615103159710
+2021-03-07 14:45:59 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Initialize connection to node localhost:9092 (id: -1 rack: null) for sending metadata request
+2021-03-07 14:45:59 DEBUG org.apache.kafka.clients.producer.KafkaProducer    [Producer clientId=producer-1] Kafka producer started
+2021-03-07 14:45:59 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Initiating connection to node localhost:9092 (id: -1 rack: null) using address localhost/127.0.0.1
+2021-03-07 14:45:59 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-1] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node -1
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Completed connection to node -1. Fetching API versions.
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Initiating API versions fetch from node -1.
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-1, correlationId=0) and timeout 30000 to node -1: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Received API_VERSIONS response from node -1 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-1, correlationId=0): org.apache.kafka.common.requests.ApiVersionsResponse@a2ad4f9
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Recorded API versions for node -1: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='netflowmeter')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node localhost:9092 (id: -1 rack: null)
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Sending METADATA request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-1, correlationId=1) and timeout 30000 to node -1: {topics=[{name=netflowmeter,_tagged_fields={}}],allow_auto_topic_creation=true,include_cluster_authorized_operations=false,include_topic_authorized_operations=false,_tagged_fields={}}
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Received METADATA response from node -1 for request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-1, correlationId=1): org.apache.kafka.common.requests.MetadataResponse@1aae0f30
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-1] Updating last seen epoch for partition netflowmeter-0 from null to epoch 0 from new metadata
+2021-03-07 14:46:00 INFO  org.apache.kafka.clients.Metadata    [Producer clientId=producer-1] Cluster ID: vq4emizZTq-gvpqTj0xD3w
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-1] Updated cluster metadata updateVersion 2 to MetadataCache{clusterId='vq4emizZTq-gvpqTj0xD3w', nodes={0=rizky-proyek:9092 (id: 0 rack: null)}, partitions=[PartitionMetadata(error=NONE, partition=netflowmeter-0, leader=Optional[0], leaderEpoch=Optional[0], replicas=0, isr=0, offlineReplicas=)], controller=rizky-proyek:9092 (id: 0 rack: null)}
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Initiating connection to node rizky-proyek:9092 (id: 0 rack: null) using address rizky-proyek/127.0.1.1
+2021-03-07 14:46:00 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-1] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node 0
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Completed connection to node 0. Fetching API versions.
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Initiating API versions fetch from node 0.
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-1, correlationId=2) and timeout 30000 to node 0: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Received API_VERSIONS response from node 0 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-1, correlationId=2): org.apache.kafka.common.requests.ApiVersionsResponse@3f8d15ac
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Recorded API versions for node 0: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Sending PRODUCE request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-1, correlationId=3) and timeout 30000 to node 0: {acks=1,timeout=30000,partitionSizes=[netflowmeter-0=2129]}
+2021-03-07 14:46:00 INFO  org.apache.kafka.clients.producer.ProducerConfig    ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class cic.cs.unb.ca.kafka.KafkaJsonSerializer
+
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-1] Received PRODUCE response from node 0 for request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-1, correlationId=3): org.apache.kafka.common.requests.ProduceResponse@28508846
+2021-03-07 14:46:00 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka version: 2.7.0
+2021-03-07 14:46:00 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka commitId: 448719dc99a19793
+2021-03-07 14:46:00 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka startTimeMs: 1615103160698
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.producer.internals.Sender    [Producer clientId=producer-2] Starting Kafka producer I/O thread.
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Initialize connection to node localhost:9092 (id: -1 rack: null) for sending metadata request
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Initiating connection to node localhost:9092 (id: -1 rack: null) using address localhost/127.0.0.1
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.producer.KafkaProducer    [Producer clientId=producer-2] Kafka producer started
+2021-03-07 14:46:00 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-2] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node -1
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Completed connection to node -1. Fetching API versions.
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Initiating API versions fetch from node -1.
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-2, correlationId=0) and timeout 30000 to node -1: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Received API_VERSIONS response from node -1 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-2, correlationId=0): org.apache.kafka.common.requests.ApiVersionsResponse@4c1dc2b0
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Recorded API versions for node -1: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='netflowmeter')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node localhost:9092 (id: -1 rack: null)
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Sending METADATA request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-2, correlationId=1) and timeout 30000 to node -1: {topics=[{name=netflowmeter,_tagged_fields={}}],allow_auto_topic_creation=true,include_cluster_authorized_operations=false,include_topic_authorized_operations=false,_tagged_fields={}}
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Received METADATA response from node -1 for request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-2, correlationId=1): org.apache.kafka.common.requests.MetadataResponse@4ef68981
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-2] Updating last seen epoch for partition netflowmeter-0 from null to epoch 0 from new metadata
+2021-03-07 14:46:00 INFO  org.apache.kafka.clients.Metadata    [Producer clientId=producer-2] Cluster ID: vq4emizZTq-gvpqTj0xD3w
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-2] Updated cluster metadata updateVersion 2 to MetadataCache{clusterId='vq4emizZTq-gvpqTj0xD3w', nodes={0=rizky-proyek:9092 (id: 0 rack: null)}, partitions=[PartitionMetadata(error=NONE, partition=netflowmeter-0, leader=Optional[0], leaderEpoch=Optional[0], replicas=0, isr=0, offlineReplicas=)], controller=rizky-proyek:9092 (id: 0 rack: null)}
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Initiating connection to node rizky-proyek:9092 (id: 0 rack: null) using address rizky-proyek/127.0.1.1
+2021-03-07 14:46:00 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-2] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node 0
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Completed connection to node 0. Fetching API versions.
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Initiating API versions fetch from node 0.
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-2, correlationId=2) and timeout 30000 to node 0: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Received API_VERSIONS response from node 0 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-2, correlationId=2): org.apache.kafka.common.requests.ApiVersionsResponse@43750d80
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Recorded API versions for node 0: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Sending PRODUCE request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-2, correlationId=3) and timeout 30000 to node 0: {acks=1,timeout=30000,partitionSizes=[netflowmeter-0=2048]}
+2021-03-07 14:46:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-2] Received PRODUCE response from node 0 for request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-2, correlationId=3): org.apache.kafka.common.requests.ProduceResponse@4487bae1
+2021-03-07 14:47:00 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 15 flow
+2021-03-07 14:47:00 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 15 flow
+2021-03-07 14:47:00 INFO  org.apache.kafka.clients.producer.ProducerConfig    ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-3
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class cic.cs.unb.ca.kafka.KafkaJsonSerializer
+
+2021-03-07 14:47:00 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka version: 2.7.0
+2021-03-07 14:47:00 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka commitId: 448719dc99a19793
+2021-03-07 14:47:00 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka startTimeMs: 1615103220436
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.producer.KafkaProducer    [Producer clientId=producer-3] Kafka producer started
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.producer.internals.Sender    [Producer clientId=producer-3] Starting Kafka producer I/O thread.
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Initialize connection to node localhost:9092 (id: -1 rack: null) for sending metadata request
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Initiating connection to node localhost:9092 (id: -1 rack: null) using address localhost/127.0.0.1
+2021-03-07 14:47:00 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-3] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node -1
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Completed connection to node -1. Fetching API versions.
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Initiating API versions fetch from node -1.
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-3, correlationId=0) and timeout 30000 to node -1: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Received API_VERSIONS response from node -1 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-3, correlationId=0): org.apache.kafka.common.requests.ApiVersionsResponse@6e4258c0
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Recorded API versions for node -1: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='netflowmeter')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node localhost:9092 (id: -1 rack: null)
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Sending METADATA request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-3, correlationId=1) and timeout 30000 to node -1: {topics=[{name=netflowmeter,_tagged_fields={}}],allow_auto_topic_creation=true,include_cluster_authorized_operations=false,include_topic_authorized_operations=false,_tagged_fields={}}
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Received METADATA response from node -1 for request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-3, correlationId=1): org.apache.kafka.common.requests.MetadataResponse@6bb3ccba
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-3] Updating last seen epoch for partition netflowmeter-0 from null to epoch 0 from new metadata
+2021-03-07 14:47:00 INFO  org.apache.kafka.clients.Metadata    [Producer clientId=producer-3] Cluster ID: vq4emizZTq-gvpqTj0xD3w
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-3] Updated cluster metadata updateVersion 2 to MetadataCache{clusterId='vq4emizZTq-gvpqTj0xD3w', nodes={0=rizky-proyek:9092 (id: 0 rack: null)}, partitions=[PartitionMetadata(error=NONE, partition=netflowmeter-0, leader=Optional[0], leaderEpoch=Optional[0], replicas=0, isr=0, offlineReplicas=)], controller=rizky-proyek:9092 (id: 0 rack: null)}
+2021-03-07 14:47:00 INFO  org.apache.kafka.clients.producer.ProducerConfig    ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-4
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class cic.cs.unb.ca.kafka.KafkaJsonSerializer
+
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Initiating connection to node rizky-proyek:9092 (id: 0 rack: null) using address rizky-proyek/127.0.1.1
+2021-03-07 14:47:00 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-3] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node 0
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Completed connection to node 0. Fetching API versions.
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Initiating API versions fetch from node 0.
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-3, correlationId=2) and timeout 30000 to node 0: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:47:00 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka version: 2.7.0
+2021-03-07 14:47:00 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka commitId: 448719dc99a19793
+2021-03-07 14:47:00 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka startTimeMs: 1615103220491
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Received API_VERSIONS response from node 0 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-3, correlationId=2): org.apache.kafka.common.requests.ApiVersionsResponse@f89b9f6
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Recorded API versions for node 0: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Sending PRODUCE request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-3, correlationId=3) and timeout 30000 to node 0: {acks=1,timeout=30000,partitionSizes=[netflowmeter-0=2289]}
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.producer.KafkaProducer    [Producer clientId=producer-4] Kafka producer started
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-3] Received PRODUCE response from node 0 for request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-3, correlationId=3): org.apache.kafka.common.requests.ProduceResponse@1bf03c7a
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.producer.internals.Sender    [Producer clientId=producer-4] Starting Kafka producer I/O thread.
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Initialize connection to node localhost:9092 (id: -1 rack: null) for sending metadata request
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Initiating connection to node localhost:9092 (id: -1 rack: null) using address localhost/127.0.0.1
+2021-03-07 14:47:00 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-4] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node -1
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Completed connection to node -1. Fetching API versions.
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Initiating API versions fetch from node -1.
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-4, correlationId=0) and timeout 30000 to node -1: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Received API_VERSIONS response from node -1 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-4, correlationId=0): org.apache.kafka.common.requests.ApiVersionsResponse@5716ad50
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Recorded API versions for node -1: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='netflowmeter')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node localhost:9092 (id: -1 rack: null)
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Sending METADATA request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-4, correlationId=1) and timeout 30000 to node -1: {topics=[{name=netflowmeter,_tagged_fields={}}],allow_auto_topic_creation=true,include_cluster_authorized_operations=false,include_topic_authorized_operations=false,_tagged_fields={}}
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Received METADATA response from node -1 for request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-4, correlationId=1): org.apache.kafka.common.requests.MetadataResponse@299ead33
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-4] Updating last seen epoch for partition netflowmeter-0 from null to epoch 0 from new metadata
+2021-03-07 14:47:00 INFO  org.apache.kafka.clients.Metadata    [Producer clientId=producer-4] Cluster ID: vq4emizZTq-gvpqTj0xD3w
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-4] Updated cluster metadata updateVersion 2 to MetadataCache{clusterId='vq4emizZTq-gvpqTj0xD3w', nodes={0=rizky-proyek:9092 (id: 0 rack: null)}, partitions=[PartitionMetadata(error=NONE, partition=netflowmeter-0, leader=Optional[0], leaderEpoch=Optional[0], replicas=0, isr=0, offlineReplicas=)], controller=rizky-proyek:9092 (id: 0 rack: null)}
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Initiating connection to node rizky-proyek:9092 (id: 0 rack: null) using address rizky-proyek/127.0.1.1
+2021-03-07 14:47:00 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-4] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node 0
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Completed connection to node 0. Fetching API versions.
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Initiating API versions fetch from node 0.
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-4, correlationId=2) and timeout 30000 to node 0: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Received API_VERSIONS response from node 0 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-4, correlationId=2): org.apache.kafka.common.requests.ApiVersionsResponse@257b1ebb
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Recorded API versions for node 0: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Sending PRODUCE request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-4, correlationId=3) and timeout 30000 to node 0: {acks=1,timeout=30000,partitionSizes=[netflowmeter-0=1942]}
+2021-03-07 14:47:00 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-4] Received PRODUCE response from node 0 for request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-4, correlationId=3): org.apache.kafka.common.requests.ProduceResponse@1ef7527c
+2021-03-07 14:48:01 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 15 flow
+2021-03-07 14:48:01 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 14 flow
+2021-03-07 14:48:01 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 14 flow
+2021-03-07 14:48:01 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 15 flow
+2021-03-07 14:48:01 INFO  org.apache.kafka.clients.producer.ProducerConfig    ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-5
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class cic.cs.unb.ca.kafka.KafkaJsonSerializer
+
+2021-03-07 14:48:01 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka version: 2.7.0
+2021-03-07 14:48:01 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka commitId: 448719dc99a19793
+2021-03-07 14:48:01 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka startTimeMs: 1615103281674
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.producer.KafkaProducer    [Producer clientId=producer-5] Kafka producer started
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.producer.internals.Sender    [Producer clientId=producer-5] Starting Kafka producer I/O thread.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Initialize connection to node localhost:9092 (id: -1 rack: null) for sending metadata request
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Initiating connection to node localhost:9092 (id: -1 rack: null) using address localhost/127.0.0.1
+2021-03-07 14:48:01 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-5] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node -1
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Completed connection to node -1. Fetching API versions.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Initiating API versions fetch from node -1.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-5, correlationId=0) and timeout 30000 to node -1: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Received API_VERSIONS response from node -1 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-5, correlationId=0): org.apache.kafka.common.requests.ApiVersionsResponse@a827ede
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Recorded API versions for node -1: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='netflowmeter')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node localhost:9092 (id: -1 rack: null)
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Sending METADATA request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-5, correlationId=1) and timeout 30000 to node -1: {topics=[{name=netflowmeter,_tagged_fields={}}],allow_auto_topic_creation=true,include_cluster_authorized_operations=false,include_topic_authorized_operations=false,_tagged_fields={}}
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Received METADATA response from node -1 for request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-5, correlationId=1): org.apache.kafka.common.requests.MetadataResponse@7ea9342
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-5] Updating last seen epoch for partition netflowmeter-0 from null to epoch 0 from new metadata
+2021-03-07 14:48:01 INFO  org.apache.kafka.clients.Metadata    [Producer clientId=producer-5] Cluster ID: vq4emizZTq-gvpqTj0xD3w
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-5] Updated cluster metadata updateVersion 2 to MetadataCache{clusterId='vq4emizZTq-gvpqTj0xD3w', nodes={0=rizky-proyek:9092 (id: 0 rack: null)}, partitions=[PartitionMetadata(error=NONE, partition=netflowmeter-0, leader=Optional[0], leaderEpoch=Optional[0], replicas=0, isr=0, offlineReplicas=)], controller=rizky-proyek:9092 (id: 0 rack: null)}
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Initiating connection to node rizky-proyek:9092 (id: 0 rack: null) using address rizky-proyek/127.0.1.1
+2021-03-07 14:48:01 INFO  org.apache.kafka.clients.producer.ProducerConfig    ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-6
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class cic.cs.unb.ca.kafka.KafkaJsonSerializer
+
+2021-03-07 14:48:01 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-5] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node 0
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Completed connection to node 0. Fetching API versions.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Initiating API versions fetch from node 0.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-5, correlationId=2) and timeout 30000 to node 0: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Received API_VERSIONS response from node 0 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-5, correlationId=2): org.apache.kafka.common.requests.ApiVersionsResponse@5b4e8f5e
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Recorded API versions for node 0: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Sending PRODUCE request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-5, correlationId=3) and timeout 30000 to node 0: {acks=1,timeout=30000,partitionSizes=[netflowmeter-0=2270]}
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-5] Received PRODUCE response from node 0 for request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-5, correlationId=3): org.apache.kafka.common.requests.ProduceResponse@637edc72
+2021-03-07 14:48:01 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka version: 2.7.0
+2021-03-07 14:48:01 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka commitId: 448719dc99a19793
+2021-03-07 14:48:01 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka startTimeMs: 1615103281778
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.producer.KafkaProducer    [Producer clientId=producer-6] Kafka producer started
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.producer.internals.Sender    [Producer clientId=producer-6] Starting Kafka producer I/O thread.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Initialize connection to node localhost:9092 (id: -1 rack: null) for sending metadata request
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Initiating connection to node localhost:9092 (id: -1 rack: null) using address localhost/127.0.0.1
+2021-03-07 14:48:01 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-6] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node -1
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Completed connection to node -1. Fetching API versions.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Initiating API versions fetch from node -1.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-6, correlationId=0) and timeout 30000 to node -1: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Received API_VERSIONS response from node -1 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-6, correlationId=0): org.apache.kafka.common.requests.ApiVersionsResponse@1e07ef4e
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Recorded API versions for node -1: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='netflowmeter')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node localhost:9092 (id: -1 rack: null)
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Sending METADATA request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-6, correlationId=1) and timeout 30000 to node -1: {topics=[{name=netflowmeter,_tagged_fields={}}],allow_auto_topic_creation=true,include_cluster_authorized_operations=false,include_topic_authorized_operations=false,_tagged_fields={}}
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Received METADATA response from node -1 for request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-6, correlationId=1): org.apache.kafka.common.requests.MetadataResponse@3f0fc954
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-6] Updating last seen epoch for partition netflowmeter-0 from null to epoch 0 from new metadata
+2021-03-07 14:48:01 INFO  org.apache.kafka.clients.Metadata    [Producer clientId=producer-6] Cluster ID: vq4emizZTq-gvpqTj0xD3w
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-6] Updated cluster metadata updateVersion 2 to MetadataCache{clusterId='vq4emizZTq-gvpqTj0xD3w', nodes={0=rizky-proyek:9092 (id: 0 rack: null)}, partitions=[PartitionMetadata(error=NONE, partition=netflowmeter-0, leader=Optional[0], leaderEpoch=Optional[0], replicas=0, isr=0, offlineReplicas=)], controller=rizky-proyek:9092 (id: 0 rack: null)}
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Initiating connection to node rizky-proyek:9092 (id: 0 rack: null) using address rizky-proyek/127.0.1.1
+2021-03-07 14:48:01 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-6] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node 0
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Completed connection to node 0. Fetching API versions.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Initiating API versions fetch from node 0.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-6, correlationId=2) and timeout 30000 to node 0: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:48:01 INFO  org.apache.kafka.clients.producer.ProducerConfig    ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-7
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class cic.cs.unb.ca.kafka.KafkaJsonSerializer
+
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Received API_VERSIONS response from node 0 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-6, correlationId=2): org.apache.kafka.common.requests.ApiVersionsResponse@2e6f9bfa
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Recorded API versions for node 0: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Sending PRODUCE request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-6, correlationId=3) and timeout 30000 to node 0: {acks=1,timeout=30000,partitionSizes=[netflowmeter-0=2306]}
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-6] Received PRODUCE response from node 0 for request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-6, correlationId=3): org.apache.kafka.common.requests.ProduceResponse@27b8ec2e
+2021-03-07 14:48:01 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka version: 2.7.0
+2021-03-07 14:48:01 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka commitId: 448719dc99a19793
+2021-03-07 14:48:01 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka startTimeMs: 1615103281968
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.producer.KafkaProducer    [Producer clientId=producer-7] Kafka producer started
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.producer.internals.Sender    [Producer clientId=producer-7] Starting Kafka producer I/O thread.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Initialize connection to node localhost:9092 (id: -1 rack: null) for sending metadata request
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Initiating connection to node localhost:9092 (id: -1 rack: null) using address localhost/127.0.0.1
+2021-03-07 14:48:01 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-7] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node -1
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Completed connection to node -1. Fetching API versions.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Initiating API versions fetch from node -1.
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-7, correlationId=0) and timeout 30000 to node -1: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Received API_VERSIONS response from node -1 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-7, correlationId=0): org.apache.kafka.common.requests.ApiVersionsResponse@400f3a1d
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Recorded API versions for node -1: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='netflowmeter')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node localhost:9092 (id: -1 rack: null)
+2021-03-07 14:48:01 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Sending METADATA request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-7, correlationId=1) and timeout 30000 to node -1: {topics=[{name=netflowmeter,_tagged_fields={}}],allow_auto_topic_creation=true,include_cluster_authorized_operations=false,include_topic_authorized_operations=false,_tagged_fields={}}
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Received METADATA response from node -1 for request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-7, correlationId=1): org.apache.kafka.common.requests.MetadataResponse@40a89584
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-7] Updating last seen epoch for partition netflowmeter-0 from null to epoch 0 from new metadata
+2021-03-07 14:48:02 INFO  org.apache.kafka.clients.Metadata    [Producer clientId=producer-7] Cluster ID: vq4emizZTq-gvpqTj0xD3w
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-7] Updated cluster metadata updateVersion 2 to MetadataCache{clusterId='vq4emizZTq-gvpqTj0xD3w', nodes={0=rizky-proyek:9092 (id: 0 rack: null)}, partitions=[PartitionMetadata(error=NONE, partition=netflowmeter-0, leader=Optional[0], leaderEpoch=Optional[0], replicas=0, isr=0, offlineReplicas=)], controller=rizky-proyek:9092 (id: 0 rack: null)}
+2021-03-07 14:48:02 INFO  org.apache.kafka.clients.producer.ProducerConfig    ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-8
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class cic.cs.unb.ca.kafka.KafkaJsonSerializer
+
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Initiating connection to node rizky-proyek:9092 (id: 0 rack: null) using address rizky-proyek/127.0.1.1
+2021-03-07 14:48:02 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-7] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node 0
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Completed connection to node 0. Fetching API versions.
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Initiating API versions fetch from node 0.
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-7, correlationId=2) and timeout 30000 to node 0: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Received API_VERSIONS response from node 0 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-7, correlationId=2): org.apache.kafka.common.requests.ApiVersionsResponse@7231df7a
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Recorded API versions for node 0: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:48:02 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka version: 2.7.0
+2021-03-07 14:48:02 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka commitId: 448719dc99a19793
+2021-03-07 14:48:02 INFO  org.apache.kafka.common.utils.AppInfoParser    Kafka startTimeMs: 1615103282039
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.producer.KafkaProducer    [Producer clientId=producer-8] Kafka producer started
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Sending PRODUCE request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-7, correlationId=3) and timeout 30000 to node 0: {acks=1,timeout=30000,partitionSizes=[netflowmeter-0=1995]}
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.producer.internals.Sender    [Producer clientId=producer-8] Starting Kafka producer I/O thread.
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Initialize connection to node localhost:9092 (id: -1 rack: null) for sending metadata request
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Initiating connection to node localhost:9092 (id: -1 rack: null) using address localhost/127.0.0.1
+2021-03-07 14:48:02 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-8] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node -1
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Completed connection to node -1. Fetching API versions.
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Initiating API versions fetch from node -1.
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-8, correlationId=0) and timeout 30000 to node -1: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Received API_VERSIONS response from node -1 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-8, correlationId=0): org.apache.kafka.common.requests.ApiVersionsResponse@6aa1e225
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Recorded API versions for node -1: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Sending metadata request MetadataRequestData(topics=[MetadataRequestTopic(name='netflowmeter')], allowAutoTopicCreation=true, includeClusterAuthorizedOperations=false, includeTopicAuthorizedOperations=false) to node localhost:9092 (id: -1 rack: null)
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Sending METADATA request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-8, correlationId=1) and timeout 30000 to node -1: {topics=[{name=netflowmeter,_tagged_fields={}}],allow_auto_topic_creation=true,include_cluster_authorized_operations=false,include_topic_authorized_operations=false,_tagged_fields={}}
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Received METADATA response from node -1 for request with header RequestHeader(apiKey=METADATA, apiVersion=9, clientId=producer-8, correlationId=1): org.apache.kafka.common.requests.MetadataResponse@251317d9
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-8] Updating last seen epoch for partition netflowmeter-0 from null to epoch 0 from new metadata
+2021-03-07 14:48:02 INFO  org.apache.kafka.clients.Metadata    [Producer clientId=producer-8] Cluster ID: vq4emizZTq-gvpqTj0xD3w
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.Metadata    [Producer clientId=producer-8] Updated cluster metadata updateVersion 2 to MetadataCache{clusterId='vq4emizZTq-gvpqTj0xD3w', nodes={0=rizky-proyek:9092 (id: 0 rack: null)}, partitions=[PartitionMetadata(error=NONE, partition=netflowmeter-0, leader=Optional[0], leaderEpoch=Optional[0], replicas=0, isr=0, offlineReplicas=)], controller=rizky-proyek:9092 (id: 0 rack: null)}
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-7] Received PRODUCE response from node 0 for request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-7, correlationId=3): org.apache.kafka.common.requests.ProduceResponse@45b11e19
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Initiating connection to node rizky-proyek:9092 (id: 0 rack: null) using address rizky-proyek/127.0.1.1
+2021-03-07 14:48:02 DEBUG org.apache.kafka.common.network.Selector    [Producer clientId=producer-8] Created socket with SO_RCVBUF = 32768, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node 0
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Completed connection to node 0. Fetching API versions.
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Initiating API versions fetch from node 0.
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Sending API_VERSIONS request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-8, correlationId=2) and timeout 30000 to node 0: {client_software_name=apache-kafka-java,client_software_version=2.7.0,_tagged_fields={}}
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Received API_VERSIONS response from node 0 for request with header RequestHeader(apiKey=API_VERSIONS, apiVersion=3, clientId=producer-8, correlationId=2): org.apache.kafka.common.requests.ApiVersionsResponse@64440181
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Recorded API versions for node 0: (Produce(0): 0 to 8 [usable: 8], Fetch(1): 0 to 12 [usable: 12], ListOffsets(2): 0 to 5 [usable: 5], Metadata(3): 0 to 9 [usable: 9], LeaderAndIsr(4): 0 to 4 [usable: 4], StopReplica(5): 0 to 3 [usable: 3], UpdateMetadata(6): 0 to 6 [usable: 6], ControlledShutdown(7): 0 to 3 [usable: 3], OffsetCommit(8): 0 to 8 [usable: 8], OffsetFetch(9): 0 to 7 [usable: 7], FindCoordinator(10): 0 to 3 [usable: 3], JoinGroup(11): 0 to 7 [usable: 7], Heartbeat(12): 0 to 4 [usable: 4], LeaveGroup(13): 0 to 4 [usable: 4], SyncGroup(14): 0 to 5 [usable: 5], DescribeGroups(15): 0 to 5 [usable: 5], ListGroups(16): 0 to 4 [usable: 4], SaslHandshake(17): 0 to 1 [usable: 1], ApiVersions(18): 0 to 3 [usable: 3], CreateTopics(19): 0 to 6 [usable: 6], DeleteTopics(20): 0 to 5 [usable: 5], DeleteRecords(21): 0 to 2 [usable: 2], InitProducerId(22): 0 to 4 [usable: 4], OffsetForLeaderEpoch(23): 0 to 3 [usable: 3], AddPartitionsToTxn(24): 0 to 2 [usable: 2], AddOffsetsToTxn(25): 0 to 2 [usable: 2], EndTxn(26): 0 to 2 [usable: 2], WriteTxnMarkers(27): 0 [usable: 0], TxnOffsetCommit(28): 0 to 3 [usable: 3], DescribeAcls(29): 0 to 2 [usable: 2], CreateAcls(30): 0 to 2 [usable: 2], DeleteAcls(31): 0 to 2 [usable: 2], DescribeConfigs(32): 0 to 3 [usable: 3], AlterConfigs(33): 0 to 1 [usable: 1], AlterReplicaLogDirs(34): 0 to 1 [usable: 1], DescribeLogDirs(35): 0 to 2 [usable: 2], SaslAuthenticate(36): 0 to 2 [usable: 2], CreatePartitions(37): 0 to 3 [usable: 3], CreateDelegationToken(38): 0 to 2 [usable: 2], RenewDelegationToken(39): 0 to 2 [usable: 2], ExpireDelegationToken(40): 0 to 2 [usable: 2], DescribeDelegationToken(41): 0 to 2 [usable: 2], DeleteGroups(42): 0 to 2 [usable: 2], ElectLeaders(43): 0 to 2 [usable: 2], IncrementalAlterConfigs(44): 0 to 1 [usable: 1], AlterPartitionReassignments(45): 0 [usable: 0], ListPartitionReassignments(46): 0 [usable: 0], OffsetDelete(47): 0 [usable: 0], DescribeClientQuotas(48): 0 [usable: 0], AlterClientQuotas(49): 0 [usable: 0], DescribeUserScramCredentials(50): 0 [usable: 0], AlterUserScramCredentials(51): 0 [usable: 0], AlterIsr(56): 0 [usable: 0], UpdateFeatures(57): 0 [usable: 0])
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Sending PRODUCE request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-8, correlationId=3) and timeout 30000 to node 0: {acks=1,timeout=30000,partitionSizes=[netflowmeter-0=1976]}
+2021-03-07 14:48:02 DEBUG org.apache.kafka.clients.NetworkClient    [Producer clientId=producer-8] Received PRODUCE response from node 0 for request with header RequestHeader(apiKey=PRODUCE, apiVersion=8, clientId=producer-8, correlationId=3): org.apache.kafka.common.requests.ProduceResponse@3799b6a0

@@ -36,8 +36,8 @@ public class App {
                 init();
 //                new MainFrame();
                 
-                new AutomaticFlowmeter(args[0], args[1], args[2], args[3]);
-//                new AutomaticFlowmeter("netflowmqtt", "192.168.100.9", "1883", "wlp3s0");
+//                new AutomaticFlowmeter(args[0], args[1], args[2], args[3]);
+                new AutomaticFlowmeter("enp0s3", "192.168.100.9", "1883", "netflowmeter");
             } catch (Exception e) {
 				logger.debug(e.getMessage());
             }

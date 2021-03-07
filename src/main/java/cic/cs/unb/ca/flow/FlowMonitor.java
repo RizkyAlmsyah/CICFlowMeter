@@ -5,6 +5,10 @@ import cic.cs.unb.ca.jnetpcap.PcapIfWrapper;
 import cic.cs.unb.ca.jnetpcap.model.BasicFeature;
 import cic.cs.unb.ca.jnetpcap.worker.LoadPcapInterfaceWorker;
 import cic.cs.unb.ca.jnetpcap.worker.TrafficFlowWorker;
+import cic.cs.unb.ca.kafka.KafkaJsonSerializer;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.StringSerializer;
 import org.jnetpcap.PcapIf;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,11 +17,13 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.ExecutionException;
-
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.Producer;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import cic.cs.unb.ca.mqtt.IMqttClient;
+
 /**
  *
  * @author ryuka
@@ -34,7 +40,7 @@ public class FlowMonitor {
 
     private TrafficFlowWorker mWorker;
     
-    private IMqttClient mqttClient;
+//    private IMqttClient mqttClient;
 
 
     public FlowMonitor(String netint, String mqtt_host, String mqtt_port, String topic) {
@@ -60,7 +66,7 @@ public class FlowMonitor {
     private void init() {
         String broker = "tcp://"+ this.mqtt_host+":"+this.mqtt_port;
         String clientId = "netflowmeter";
-        mqttClient = new IMqttClient(broker, clientId);
+//        mqttClient = new IMqttClient(broker, clientId);
         loadPcapIfs();
     }
     
@@ -115,7 +121,7 @@ public class FlowMonitor {
                 logger.debug("Listening in " + event.getSource());
             }else if (TrafficFlowWorker.PROPERTY_FLOW.equalsIgnoreCase(event.getPropertyName())) {
 //                insertFlow((BasicFlow) event.getNewValue());
-                jsonMqtt((BasicFlow) event.getNewValue());
+                producer((BasicFlow) event.getNewValue());
             }else if ("state".equals(event.getPropertyName())) {
                 switch (task.getState()) {
                     case STARTED:
@@ -137,23 +143,19 @@ public class FlowMonitor {
         String path = FlowMgr.getInstance().getAutoSaveFile();
         logger.info("path:{}", path);
     }
-    
-    private void jsonMqtt(BasicFlow flow) {
-        if (mqttClient == null) {
-            init();
-        }
+
+    public void producer(BasicFlow flow){
         BasicFeature msg = flow.dumpFlowFeatures();
-        
-        Gson gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .serializeSpecialFloatingPointValues()
-                .serializeNulls()
-                .create();
-        
-        String jsonMsg = gson.toJson(msg);
-        
-        mqttClient.MqttPub(this.topic, jsonMsg);
-        
-//        logger.info("\nCatch Insect with ID: " + flow.getFlowId()); 
+
+        Properties props = new Properties();
+        props.put("bootstrap.servers", "localhost:9092");
+        Producer<String,BasicFeature> kafkaProducer =
+                new KafkaProducer<>(
+                        props,
+                        new StringSerializer(),
+                        new KafkaJsonSerializer()
+                );
+// Send a message
+        kafkaProducer.send(new ProducerRecord<>("netflowmeter", "0", msg));
     }
 }
